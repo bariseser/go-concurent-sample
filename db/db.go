@@ -7,7 +7,7 @@ import (
 
 func InitDB() (*sql.DB, error) {
 
-	db, err := sql.Open("mysql", "root:12345123@tcp(127.0.0.1)/naapsam")
+	db, err := sql.Open("mysql", "root:12345@tcp(127.0.0.1)/dbname")
 
 	if err != nil {
 		return nil, err
